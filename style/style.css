@@ -85,11 +85,13 @@ ul {
   line-height: 16px;
   letter-spacing: 0.02em;
   display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 10px;
 }
 
+.contact-list-item {
+  justify-content: center;
+  align-items: center;
+}
 .contact-section-value {
   color: var(--gray);
   padding: 5px;
@@ -115,7 +117,12 @@ ul {
   display: block;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(../images/bg-img.jpg);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(13, 13, 13, 0.52),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/bg-img.jpg);
 }
 
 .big-section h1 {
@@ -226,11 +233,6 @@ ul {
 .team {
   background-color: var(--white);
   border-radius: 0px 0px 4px 4px;
-}
-
-.team:hover,
-.team:focus,
-.team:active {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
@@ -240,11 +242,11 @@ ul {
   height: 260px;
 }
 
-.img-container {
+/* .img-container {
   display: block;
   max-width: 100%;
   height: auto;
-}
+} */
 
 .photo-container-name {
   font-size: 16px;
@@ -345,47 +347,39 @@ ul {
 
 .container-img {
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .container-img-file {
   background: var(--white);
-  border: 1px solid black;
+  border: 1px solid rgba(238, 238, 238, 1);
+  height: 405px;
+  margin-bottom: 30px;
 }
 
-.container-img-file :hover,
-.container-img-file :active,
-.container-img-file :focus {
+.container-img-file:hover,
+.container-img-file:active,
+.container-img-file:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .container-img-file-head {
-  position: absolute;
   font-weight: 700;
   font-size: 18px;
   line-height: 36px;
-  margin-top: 310px;
-  padding-left: 24px;
+  padding: 20px 0px 0px 24px;
   letter-spacing: 0.06em;
-
   color: var(--black);
 }
 
 .container-img-file-paragraf {
-  position: absolute;
   font-size: 16px;
   line-height: 30px;
-  margin-top: 350px;
   letter-spacing: 0.03em;
   padding-left: 24px;
   color: var(--gray);
-}
-
-.script-container {
-  margin: auto;
-  padding: auto;
 }
 
 .section {
