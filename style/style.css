@@ -79,13 +79,12 @@ ul {
   color: var(--blue);
 }
 
-.main-nav-link:after {
+.main-nav-link:hover:after {
   content: "";
-  border-bottom: 4px solid rgb(232, 7, 7);
+  border-bottom: 4px solid var(--blue);
+  border-radius: 2px;
   width: 58px;
   display: block;
-  margin: 0 auto;
-  padding-top: 28px;
 }
 
 .contact-list {
