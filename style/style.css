@@ -279,7 +279,6 @@ ul {
   letter-spacing: 0.03em;
   color: var(--blue);
   margin-bottom: 25px;
-  margin-left: 130px;
 }
 .footer-logo-web {
   color: var(--white);
@@ -305,8 +304,12 @@ ul {
 }
 
 .foot-logo-contacts {
-  padding-bottom: 60px;
   margin-left: 130px;
+}
+
+.footer-logo-icons {
+  display: flex;
+  justify-content: center;
 }
 
 .filters {
@@ -391,11 +394,12 @@ ul {
   display: flex;
   justify-content: space-around;
   gap: 30px;
+  color: #afb1b8;
 }
 
 .customer-logo-item {
   background-color: var(--white);
-  border: 1px solid var(--gray);
+  border: 1px solid #afb1b8;
   border-radius: 3px;
   width: 170px;
   height: 92px;
@@ -435,7 +439,6 @@ ul {
 
 .social-icons-list {
   display: flex;
-  position: relative;
   gap: 10px;
 }
 
@@ -463,11 +466,6 @@ ul {
   bottom: 20px;
 }
 
-.subsol .social-link {
-  top: -70px;
-  left: 305px;
-}
-
 .social-link:hover,
 .social-link:focus,
 .social-link:active {
@@ -484,10 +482,7 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white);
-  display: block;
-  position: absolute;
-  left: 316px;
-  top: -97px;
+  padding-bottom: 25px;
 }
 
 .image {
@@ -512,4 +507,18 @@ ul {
 .table {
   margin-left: auto;
   margin-right: auto;
+}
+
+.footer-direction {
+  display: flex;
+}
+
+.footer-social-icons {
+  display: flex;
+  flex-direction: column;
+  margin-left: 60px;
+}
+
+.footer-address {
+  margin-left: 200px;
 }
